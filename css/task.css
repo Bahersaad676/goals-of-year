@@ -1,0 +1,52 @@
+body {
+	background: #53c0f0;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+	width: 75%;
+    margin: auto;
+}
+
+.form {
+	background: #ccc;
+	text-align: center;
+}
+
+.form p {
+    font-family: Georgia, Times, "Times New Roman", serif;
+    padding-top: 13px;
+}
+
+.form .input {
+	background: #ddd;
+    padding: 13px;
+}
+
+.form .input input {
+	    width: 72%;
+    height: 32px;
+    text-align: center;
+}
+
+.form .input button {
+	    width: 20%;
+    height: 36px;
+}
+
+.goals {
+	background: #eee;
+	padding: 0 12px 12px 12px;
+}
+
+#gls {
+	padding: 10px;
+}
+
+ .the-goal {
+	background: #3b91d080;
+    margin: 12px;
+    padding: 12px;
+}
