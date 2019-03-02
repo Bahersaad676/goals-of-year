@@ -6,7 +6,9 @@ theGoals = [...document.getElementsByClassName('the-goal')],
 lengthGoals = document.getElementById('lengthGolas'),
 achive = document.getElementById('achive'),
 inputErr = document.getElementById('input-err'),
+nums = [],
 removed = [];
+
 btn.onclick = function() {
 	createElem();
 	rempveGoals();
@@ -16,11 +18,13 @@ function createElem() {
 	if (input.value === "") {
 		inputErr.textContent = "you have to enter your goals";
 	} else {
-		var d = document.createElement("div");
+	var d = document.createElement("div");
 	d.textContent = input.value;
 	d.classList.add("the-goal");
 	goalAdded.append(d);
 	input.value = "";
+	nums.push(this);
+	console.log(nums);
 	inputErr.textContent = "";
 	}
 	
@@ -29,7 +33,7 @@ function createElem() {
 function rempveGoals() {
 	var cccc = [...goalAdded.children];
 	console.log(cccc);
-	lengthGolas.textContent = cccc.length;
+	lengthGolas.textContent = cccc.length + removed.length;
 	for (var i = 0; i < cccc.length; i++) {
 	cccc[i].onclick = function () {
 		this.remove();
@@ -39,3 +43,5 @@ function rempveGoals() {
 		}
 	}
 }
+
+ // add the number removed to the all gloas
