@@ -1,3 +1,7 @@
+/*
+Baher Saad
+2019/3/3
+*/
 let input = document.getElementById('input'),
 btn = document.getElementById('btn'),
 goalAdded = document.getElementById('gls'),
@@ -44,4 +48,10 @@ function rempveGoals() {
 	}
 }
 
- // add the number removed to the all gloas
+(function clickWnClickInput() {
+	input.addEventListener("keyup", function(event) {
+    if (event.keyCode === 13) {
+        btn.click();
+    }
+});
+})();
